@@ -1,0 +1,83 @@
+ @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/Front-End_PG1/imgs/tiro-completo-crianca-sentada-ao-ar-livre\ 1.png");
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#titulo-superior {
+    position: absolute;   
+    font-family: "Finger Paint", cursive;
+    font-weight: 400;
+    font-size: 95px;
+    color: #fff;
+    z-index: 2;
+    left: 75%;
+    bottom: 30%;
+}
+
+#retangulo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 77%;
+    height: 32vh;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.titulo-container {
+    display: flex;
+}
+
+.titulo-esquerda, .titulo-direita {
+    flex: 1;
+    text-align: center;
+}
+
+.titulo-esquerda h2, .titulo-direita h3 {
+    margin: 0;
+}
+
+.titulo-esquerda h2{
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 24px;
+    text-align: justify;
+    padding: 2% 4%;
+}
+
+.titulo-direita h3{
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: right;
+    padding: 10%;
+}
+.titulo-direita a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.titulo-direita a:hover {
+    color: red;
+}
