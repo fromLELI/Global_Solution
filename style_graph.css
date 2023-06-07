@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 1920px;
+    height: 1080px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .square {
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    height: 540px;
+  }
+  
+  .square img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  .square:hover img {
+    filter: brightness(80%);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .square:hover .overlay {
+    opacity: 1;
+  }
+  
+  .description {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+  }
+  
