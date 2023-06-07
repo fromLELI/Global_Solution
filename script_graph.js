@@ -7,3 +7,8 @@ squares.forEach(square => {
     overlay.classList.toggle('active');
   });
 });
+
+video.addEventListener('ended', function() {
+  this.currentTime = 0;
+  this.play();
+});
